@@ -9,8 +9,10 @@ import { EntityModule } from '../../common/entity/entity.module';
 import { routing }       from './snapshots.routing';
 
 import { SnapshotListComponent } from './snapshot-list/';
-import { SnapshotAddComponent } from './snapshot-add/';
 import { SnapshotDeleteComponent } from './snapshot-delete/';
+import { SnapshotCloneComponent } from './snapshot-clone/';
+import { SnapshotRollbackComponent } from './snapshot-rollback/';
+import { SnapshotAddComponent } from './snapshot-add/';
 
 @NgModule({
   imports: [
@@ -25,8 +27,10 @@ import { SnapshotDeleteComponent } from './snapshot-delete/';
   ],
   declarations: [
     SnapshotListComponent,
-    SnapshotAddComponent,
     SnapshotDeleteComponent,
+    SnapshotCloneComponent,
+    SnapshotRollbackComponent,
+    SnapshotAddComponent
   ],
   providers: [
   ]
